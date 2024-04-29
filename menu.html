@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .scaled-image {
+            width: 100%;
+            height: auto;
+        }
+        .image-container {
+    position: absolute;
+    top: -1555px;
+    left: -2225px;
+    width: 100px;
+    height: auto;
+}
+
+@keyframes popIn {
+            0% {
+                transform: scale(0);
+            }
+            80% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        h2 {
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        h2.show {
+            opacity: 1;
+        }
+
+        h3 {
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        h3.show {
+            opacity: 1;
+        }
+
+        .rektangel{
+    width: 200px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 2px solid black;
+        }
+
+
+    </style>
+
+    <script>
+                document.addEventListener('DOMContentLoaded', function() {
+            var punktlista = document.querySelector('.punktlista');
+            punktlista.classList.add('show');
+            document.querySelector('.punktlista').classList.add('show');
+        });
+
+        
+        
+    </script>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meny till Coffee Haven</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>        
+        
+   
+<header>
+
+<h1>Välkommen till Coffee Haven</h1>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="menu.html">Menu</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<main>
+    <h2>Kaffedrycker</h2>
+
+    <h3>Kaffebröd</h3>
+
+
+    <img src="Kaffe2.webp" id="bakgrundsbild" alt="Bild på en kopp med kaffe" width="200" height="300" style="margin-top: 0px;" class="scaled-image" >
+    
+    <ul  id="punktlista" >
+
+        <li>Espresso.</li>
+        <li>Cappuccino.</li>
+        <li>Caffe Latte.</li>
+        <li>Café au Lait.</li>
+        <li>Cortado.</li>
+        <li>Macchiato.</li>
+        <li>Latte Macchiato.</li>
+        <li>Americano.</li>
+
+        
+    </ul>
+
+    <ul id="punktlista2">
+
+        <li>Morotskaka.</li>
+        <li>Vaniljrutor.</li>
+        <li>Kanelbullar.</li>
+        <li>Wienerbröd.</li>
+        <li>Silviakaka.</li>
+        <li>Napoleonbakelse.</li>
+        <li>Vaniljtosca.</li>
+        <li>Dammsugare.</li>
+        <li>Äppelkaka.</li>
+        <li>Kärleksmums.</li>
+
+    </ul>
+
+</main>
+
+<footer>
+
+<p>&copy; 2024 Coffee Haven</p>
+
+</footer>
+
+</body>
+
+</html>
